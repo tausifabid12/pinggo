@@ -19,6 +19,7 @@ const messages_route_1 = __importDefault(require("../modules/messages/messages.r
 const productCarousel_route_1 = __importDefault(require("../modules/productCarousel/productCarousel.route"));
 const orders_route_1 = __importDefault(require("../modules/orders/orders.route"));
 const customers_route_1 = __importDefault(require("../modules/customers/customers.route"));
+const otp_route_1 = __importDefault(require("../modules/otp-facebook/otp.route"));
 const router = express_1.default.Router();
 router.use("/users", user_route_1.default);
 router.use("/user-flow", user_flow_route_1.default);
@@ -36,4 +37,5 @@ router.use("/category", category_route_1.default);
 router.use("/orders", orders_route_1.default);
 router.use("/customers", customers_route_1.default);
 router.use("/product-carousel", productCarousel_route_1.default);
+router.use("/otp", otp_route_1.default);
 exports.default = router;
