@@ -42,7 +42,7 @@ const createMessageInDb = (data) => __awaiter(void 0, void 0, void 0, function* 
 exports.createMessageInDb = createMessageInDb;
 // Get all Messages
 const getMessagesInDb = () => __awaiter(void 0, void 0, void 0, function* () {
-    return yield messages_model_1.default.find().sort({ updatedAt: -1 }); // Sort by updatedAt in descending order
+    return yield messages_model_1.default.find();
 });
 exports.getMessagesInDb = getMessagesInDb;
 // Get a single Message by ID

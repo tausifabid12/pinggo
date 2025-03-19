@@ -16,8 +16,11 @@ const MessageSchema = new mongoose_1.default.Schema({
             audioUrl: { type: String, default: '' },
             videoUrl: { type: String, default: '' },
             imageUrl: { type: String, default: '' },
+            label: { type: String, default: '' },
+            time: { type: String, default: '' },
             isEcho: { type: Boolean },
-            isTemplate: { type: Boolean }
+            isTemplate: { type: Boolean },
+            isSeen: { type: Boolean },
         }
     ]
 }, { timestamps: true });
